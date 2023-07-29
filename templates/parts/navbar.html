@@ -1,6 +1,8 @@
 {% load static %}
 
 <style> img{width:40px;}</style>
+
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
       <a class="navbar-brand" href="{% url ''%}"><img src="{% static 'img/logo.png'%}" alt="">  Navbar scroll</a>
@@ -17,12 +19,12 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'about'%}">About</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown" >
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Link
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
+            <ul class="dropdown-menu" id="sol">
+              <li><a class="dropdown-item" href="{%url 'student'%}">Student</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -39,3 +41,6 @@
       </div>
     </div>
   </nav>
+  
+
+  

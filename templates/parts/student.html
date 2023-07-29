@@ -1,0 +1,31 @@
+{% extends 'index.html' %} 
+{%load static%}
+<!-- <link rel="stylesheet" href="{% static '../css/student.css' %}"> -->
+{% block content %}
+<h1>hello</h1>
+<!-- <ul>
+    s
+    {% for item in student %}
+    <li>
+        <span>  Name: </span> <span>{{ item.sit.name }}</span>
+        <br>
+        <span> age : </span> <span>{{ item.sit.age }}</span>
+        <br>
+        <span> img: </span> <span>{{ item.sit.img }}</span>
+        </li>
+        {% endfor %}
+    </ul> -->
+<ul>
+    
+    {% for item in stu %}
+    <li>
+        <span>  Name: </span> <span>{{ item.name }}</span>
+        <br>
+        <span> img: </span>  <img src="{{ item.img.url }}" alt="">
+       
+        <br>
+        <span> age : </span> <span>{{ item.age }}</span>
+    </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}

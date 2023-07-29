@@ -2,3 +2,6 @@ body{
     box-sizing: border-box;
 background-color: rgba(19, 155, 189, 0.586);
 }
+h1{
+    background-color: red;
+}
